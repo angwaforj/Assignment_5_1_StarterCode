@@ -5,15 +5,16 @@ namespace CIS174_TestCoreApp.Controllers
 {
     public class PersonController : Controller
     {
+        
         public IActionResult Index()
         {
             var viewModel = new CreatePersonViewModel
             {
                 School = "DMACC"
-            };
+            }; 
 
             return View(viewModel);
-        }
+        }  
 
         [HttpPost]
         public IActionResult Index(CreatePersonViewModel model)
@@ -25,5 +26,7 @@ namespace CIS174_TestCoreApp.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
+       
     }
 }

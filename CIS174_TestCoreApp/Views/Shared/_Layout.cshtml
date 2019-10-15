@@ -33,7 +33,17 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Person" asp-action="Index">Assignment 5.1</a></li>
+                    
+                    <li class="dropdown">
+                        <a asp-area="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" asp-controller="Person" asp-action="Index">Assignments <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-controller="Person" asp-action="Index">Assignment 5.1</a></li>
+                            <li><a asp-controller="Student" asp-action="Student">Assignment 6.1</a></li>
+                            <li><a asp-controller="Profile" asp-action="CreatePerson">Assignment 7.1</a></li>
+
+                        </ul>
+                    </li>
+                  
                 </ul>
             </div>
         </div>

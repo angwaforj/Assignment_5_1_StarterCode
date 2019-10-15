@@ -50,6 +50,18 @@ namespace CIS174_TestCoreApp
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "Student",
+                    template: "Student/{action}/{id:int?}",
+                    defaults: new { controller = "Convention", action = "Student" }
+                    );
+
+                routes.MapRoute(
+                    name: "Profile",
+                    template: "Profile/{action}/{id}",
+                    defaults: new { controller = "Profile", action = "CreatePerson" }
+                );
+
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
