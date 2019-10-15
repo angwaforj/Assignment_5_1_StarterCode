@@ -57,6 +57,7 @@ namespace CIS174_TestCoreApp.Models
 
         = new List<SelectListItem>
         {
+            new SelectListItem{Value = "", Text ="Please select country"},
            new SelectListItem{Value = "USA", Text ="United States"},
            new SelectListItem{Value = "Mex", Text= " Mexico"},
            new SelectListItem{Value = "CA", Text = " Canada"}

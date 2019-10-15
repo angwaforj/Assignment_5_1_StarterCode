@@ -58,42 +58,7 @@ namespace CIS174_TestCoreApp.Controllers
            
             return View(students);
     }
-    /*  {
-          StudentModel student = new StudentModel();
-          {
-              student.FirstName = "Alattore";
-              student.LastName = "vernon";
-              student.Grades = "A";
-              studentModel.Add(student);
-
-              student = new StudentModel();
-
-              student.FirstName = "Jackson";
-              student.LastName = "Angwafor";
-              student.Grades = "A+";
-              studentModel.Add(student);
-
-              student = new StudentModel();
-
-              student.FirstName = "Jude";
-              student.LastName = "Sama";
-              student.Grades = "B+";
-              studentModel.Add(student);
-
-              student = new StudentModel();
-
-              student.FirstName = "Jane";
-              student.LastName = "Bitterleaf";
-              student.Grades = "C+";
-              studentModel.Add(student);
-
-              student = new StudentModel();
-
-              student.FirstName = "Madison";
-              student.LastName = "Obama";
-              student.Grades = "B";
-              studentModel.Add(student);  */
-
+    
 
     }
     
