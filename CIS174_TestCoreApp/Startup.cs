@@ -51,13 +51,13 @@ namespace CIS174_TestCoreApp
             {
                 routes.MapRoute(
                     name: "Student",
-                    template: "Student/{action}/{id:int?}",
-                    defaults: new { controller = "Convention", action = "Student" }
+                    template: "Student/{action}/{id:int:range(1,10)}",
+                    defaults: new { controller = "Student", action = "Student" }
                     );
 
                 routes.MapRoute(
-                    name: "Profile",
-                    template: "Profile/{action}/{id}",
+                    name: "UserProfile",
+                    template: "UserProfile/{action}/{id}",
                     defaults: new { controller = "Profile", action = "CreatePerson" }
                 );
 
